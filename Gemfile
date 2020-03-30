@@ -61,7 +61,7 @@ gem 'gitlab_omniauth-ldap', '~> 1.2.1', require: "omniauth-ldap"
 
 # Git Wiki
 # Required manually in config/initializers/gollum.rb to control load order
-gem 'gollum-lib', '~> 4.1.0', require: false
+gem 'gollum-lib', '~> 5.0.0', require: false
 gem 'gollum-rugged_adapter', '~> 0.4.2', require: false
 
 # Language detection
