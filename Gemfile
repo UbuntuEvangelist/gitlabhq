@@ -4,7 +4,7 @@ gem 'rails', '4.2.6'
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.1', '>= 2.1.1'
 
 # Specify a sprockets version due to increased performance
 # See https://gitlab.com/gitlab-org/gitlab-ce/issues/6069
@@ -18,23 +18,23 @@ gem "mysql2", '~> 0.3.16', group: :mysql
 gem "pg", '~> 0.18.2', group: :postgres
 
 # Authentication libraries
-gem 'devise',                 '~> 3.5.4'
-gem 'doorkeeper',             '~> 3.1'
-gem 'devise-async',           '~> 0.9.0'
+gem 'devise', '~> 3.5.4'
+gem 'doorkeeper', '~> 3.1', '>= 3.1.0'
+gem 'devise-async', '~> 0.9.0'
 gem 'omniauth',               '~> 1.3.1'
 gem 'omniauth-auth0',         '~> 1.4.1'
 gem 'omniauth-azure-oauth2',  '~> 0.0.6'
 gem 'omniauth-bitbucket',     '~> 0.0.2'
-gem 'omniauth-cas3',          '~> 1.1.2'
+gem 'omniauth-cas3', '~> 1.1.4'
 gem 'omniauth-facebook',      '~> 3.0.0'
 gem 'omniauth-github',        '~> 1.1.1'
 gem 'omniauth-gitlab',        '~> 1.0.0'
 gem 'omniauth-google-oauth2', '~> 0.2.0'
 gem 'omniauth-kerberos',      '~> 0.3.0', group: :kerberos
-gem 'omniauth-saml',          '~> 1.5.0'
+gem 'omniauth-saml', '~> 1.5.0'
 gem 'omniauth-shibboleth',    '~> 1.2.0'
 gem 'omniauth-twitter',       '~> 1.2.0'
-gem 'omniauth_crowd',         '~> 2.2.0'
+gem 'omniauth_crowd', '~> 2.2.3'
 gem 'rack-oauth2',            '~> 1.2.1'
 gem 'jwt'
 
@@ -43,7 +43,7 @@ gem 'recaptcha', require: 'recaptcha/rails'
 gem 'akismet', '~> 2.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 2.0.0'
+gem 'devise-two-factor', '~> 2.0.1'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 1.3.4'
 
@@ -61,7 +61,7 @@ gem 'gitlab_omniauth-ldap', '~> 1.2.1', require: "omniauth-ldap"
 
 # Git Wiki
 # Required manually in config/initializers/gollum.rb to control load order
-gem 'gollum-lib', '~> 4.1.0', require: false
+gem 'gollum-lib', '~> 4.2.7', require: false
 gem 'gollum-rugged_adapter', '~> 0.4.2', require: false
 
 # Language detection
@@ -76,13 +76,13 @@ gem 'rack-cors',    '~> 0.4.0', require: 'rack/cors'
 gem "kaminari", "~> 0.16.3"
 
 # HAML
-gem "haml-rails", '~> 0.9.0'
+gem "haml-rails", "~> 0.9.0"
 
 # Files attachments
 gem "carrierwave", '~> 0.10.0'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.2'
 
 # for aws storage
 gem "fog", "~> 1.36.0"
@@ -96,7 +96,7 @@ gem "seed-fu", '~> 2.3.5'
 
 # Markdown and HTML processing
 gem 'html-pipeline', '~> 1.11.0'
-gem 'task_list',     '~> 1.0.2', require: 'task_list/railtie'
+gem 'task_list', '~> 1.0.2', require: 'task_list/railtie'
 gem 'github-markup', '~> 1.3.1'
 gem 'redcarpet',     '~> 3.3.3'
 gem 'RedCloth',      '~> 4.2.9'
@@ -109,7 +109,7 @@ gem 'rouge',         '~> 1.10.1'
 
 # See https://groups.google.com/forum/#!topic/ruby-security-ann/aSbgDiwb24s
 # and https://groups.google.com/forum/#!topic/ruby-security-ann/Dy7YiKb_pMM
-gem 'nokogiri', '~> 1.6.7', '>= 1.6.7.2'
+gem 'nokogiri', '~> 1.11.0'
 
 # Diffs
 gem 'diffy', '~> 3.0.3'
@@ -148,7 +148,7 @@ gem 'settingslogic', '~> 2.0.9'
 gem 'version_sorter', '~> 2.0.0'
 
 # Cache
-gem "redis-rails", '~> 4.0.0'
+gem "redis-rails", "~> 4.0.0"
 
 # Redis
 gem 'redis', '~> 3.2'
@@ -176,13 +176,13 @@ gem 'asana', '~> 0.4.0'
 gem 'ruby-fogbugz', '~> 0.2.1'
 
 # d3
-gem 'd3_rails', '~> 3.5.0'
+gem 'd3_rails', '~> 3.5.11'
 
 # underscore-rails
 gem "underscore-rails", "~> 1.8.0"
 
 # Sanitize user input
-gem "sanitize", '~> 2.0'
+gem "sanitize", "~> 2.1", ">= 2.1.0"
 gem 'babosa', '~> 1.0.2'
 
 # Sanitizes SVG input
@@ -203,20 +203,20 @@ gem 'mousetrap-rails', '~> 1.4.6'
 # Detect and convert string character encoding
 gem 'charlock_holmes', '~> 0.7.3'
 
-gem "sass-rails", '~> 5.0.0'
-gem "coffee-rails", '~> 4.1.0'
+gem "sass-rails", "~> 5.0.4"
+gem "coffee-rails", "~> 4.1.1"
 gem "uglifier", '~> 2.7.2'
-gem 'turbolinks', '~> 2.5.0'
+gem 'turbolinks', '~> 2.5.3'
 gem 'jquery-turbolinks', '~> 2.1.0'
 
 gem 'addressable',        '~> 2.3.8'
 gem 'bootstrap-sass',     '~> 3.3.0'
-gem 'font-awesome-rails', '~> 4.2'
+gem 'font-awesome-rails', '~> 4.5', '>= 4.5.0.1'
 gem 'gitlab_emoji',       '~> 0.3.0'
-gem 'gon',                '~> 6.0.1'
+gem 'gon', '~> 6.0.1'
 gem 'jquery-atwho-rails', '~> 1.3.2'
-gem 'jquery-rails',       '~> 4.1.0'
-gem 'jquery-ui-rails',    '~> 5.0.0'
+gem 'jquery-rails', '~> 4.1.1'
+gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'raphael-rails',      '~> 2.1.2'
 gem 'request_store',      '~> 1.3.0'
 gem 'select2-rails',      '~> 3.5.9'
@@ -227,7 +227,7 @@ gem 'base32',             '~> 0.3.0'
 # Sentry integration
 gem 'sentry-raven', '~> 0.15'
 
-gem 'premailer-rails', '~> 1.9.0'
+gem 'premailer-rails', '~> 1.9.2'
 
 # Metrics
 group :metrics do
@@ -241,11 +241,11 @@ group :development do
   gem 'brakeman', '~> 3.2.0', require: false
 
   gem 'letter_opener_web', '~> 1.3.0'
-  gem 'quiet_assets', '~> 1.0.2'
+  gem 'quiet_assets', '~> 1.0.3'
   gem 'rerun', '~> 0.11.0'
   gem 'bullet', require: false
   gem 'rblineprof', platform: :mri, require: false
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
 
   # Better errors handler
   gem 'better_errors', '~> 1.0.1'
@@ -267,9 +267,9 @@ group :development, :test do
 
   gem 'database_cleaner',   '~> 1.4.0'
   gem 'factory_girl_rails', '~> 4.6.0'
-  gem 'rspec-rails',        '~> 3.4.0'
+  gem 'rspec-rails', '~> 3.4.2'
   gem 'rspec-retry'
-  gem 'spinach-rails',      '~> 0.2.1'
+  gem 'spinach-rails', '~> 0.2.1'
   gem 'spinach-rerun-reporter', '~> 0.0.2'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
@@ -278,11 +278,11 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.0.0'
 
-  gem 'capybara',            '~> 2.6.2'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist',         '~> 1.9.0'
+  gem 'capybara', '~> 2.6.2'
+  gem 'capybara-screenshot', '~> 1.0.11'
+  gem 'poltergeist', '~> 1.9.0'
 
-  gem 'teaspoon', '~> 1.1.0'
+  gem 'teaspoon', '~> 1.1.5'
   gem 'teaspoon-jasmine', '~> 2.2.0'
 
   gem 'spring',                   '~> 1.7.0'
