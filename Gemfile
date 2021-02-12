@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'rails', '4.2.6'
+gem 'rails', '6.0.3.5'
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
@@ -82,7 +82,7 @@ gem "haml-rails", '~> 0.9.0'
 gem "carrierwave", '~> 0.10.0'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.2'
 
 # for aws storage
 gem "fog", "~> 1.36.0"
