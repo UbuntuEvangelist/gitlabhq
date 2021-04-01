@@ -148,7 +148,7 @@ gem 'settingslogic', '~> 2.0.9'
 gem 'version_sorter', '~> 2.0.0'
 
 # Cache
-gem "redis-rails", '~> 4.0.0'
+gem "redis-rails", "~> 5.0.0"
 
 # Redis
 gem 'redis', '~> 3.2'
