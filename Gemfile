@@ -25,11 +25,11 @@ gem 'omniauth',               '~> 1.3.1'
 gem 'omniauth-auth0',         '~> 1.4.1'
 gem 'omniauth-azure-oauth2',  '~> 0.0.6'
 gem 'omniauth-bitbucket',     '~> 0.0.2'
-gem 'omniauth-cas3',          '~> 1.1.2'
+gem 'omniauth-cas3', '~> 1.1.3'
 gem 'omniauth-facebook',      '~> 3.0.0'
 gem 'omniauth-github',        '~> 1.1.1'
 gem 'omniauth-gitlab',        '~> 1.0.0'
-gem 'omniauth-google-oauth2', '~> 0.2.0'
+gem 'omniauth-google-oauth2', '~> 0.2.10'
 gem 'omniauth-kerberos',      '~> 0.3.0', group: :kerberos
 gem 'omniauth-saml',          '~> 1.5.0'
 gem 'omniauth-shibboleth',    '~> 1.2.0'
@@ -209,7 +209,7 @@ gem "uglifier", '~> 2.7.2'
 gem 'turbolinks', '~> 2.5.0'
 gem 'jquery-turbolinks', '~> 2.1.0'
 
-gem 'addressable',        '~> 2.3.8'
+gem 'addressable', '~> 2.8.0'
 gem 'bootstrap-sass',     '~> 3.3.0'
 gem 'font-awesome-rails', '~> 4.2'
 gem 'gitlab_emoji',       '~> 0.3.0'
@@ -227,7 +227,7 @@ gem 'base32',             '~> 0.3.0'
 # Sentry integration
 gem 'sentry-raven', '~> 0.15'
 
-gem 'premailer-rails', '~> 1.9.0'
+gem 'premailer-rails', '~> 1.9.2'
 
 # Metrics
 group :metrics do
@@ -269,7 +269,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.6.0'
   gem 'rspec-rails',        '~> 3.4.0'
   gem 'rspec-retry'
-  gem 'spinach-rails',      '~> 0.2.1'
+  gem 'spinach-rails', '~> 0.2.1'
   gem 'spinach-rerun-reporter', '~> 0.0.2'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
@@ -278,9 +278,9 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.0.0'
 
-  gem 'capybara',            '~> 2.6.2'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist',         '~> 1.9.0'
+  gem 'capybara', '~> 2.6.2'
+  gem 'capybara-screenshot', '~> 1.0.11'
+  gem 'poltergeist', '~> 1.9.0'
 
   gem 'teaspoon', '~> 1.1.0'
   gem 'teaspoon-jasmine', '~> 2.2.0'
@@ -316,7 +316,7 @@ end
 
 gem "newrelic_rpm", '~> 3.14'
 
-gem 'octokit', '~> 4.3.0'
+gem 'octokit', '~> 4.6.0'
 
 gem "mail_room", "~> 0.7"
 
