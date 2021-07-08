@@ -100,7 +100,7 @@ gem 'task_list',     '~> 1.0.2', require: 'task_list/railtie'
 gem 'github-markup', '~> 1.3.1'
 gem 'redcarpet',     '~> 3.3.3'
 gem 'RedCloth',      '~> 4.2.9'
-gem 'rdoc',          '~>3.6'
+gem 'rdoc', '~> 6.3', '>= 6.3.1'
 gem 'org-ruby',      '~> 0.9.12'
 gem 'creole',        '~> 0.5.0'
 gem 'wikicloth',     '0.8.1'
@@ -252,7 +252,7 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.2'
 
   # Docs generator
-  gem "sdoc", '~> 0.3.20'
+  gem "sdoc", "~> 1.0.0"
 
   # thin instead webrick
   gem 'thin', '~> 1.6.1'
